@@ -1,0 +1,185 @@
+/*   section{ display: flex;
+    width: 1000px;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-wrap: wrap;
+    flex-direction: row;}*/
+
+@import url('https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&family=Dancing+Script:wght@500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&family=Courgette&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,400;1,300&display=swap');
+
+:root{
+    --cor0:#aff1158a;
+    --cor01: #adf011;
+    --cor02:  #77a50b;
+    --cor03: #3d5505;
+    --cor04:#ff8724e5;
+    --cor05: #eb8c105d;
+    --cor06: #eb8c100a;
+
+    --font0: 'Dancing Script', cursive;
+    --font01: 'Courgette', cursive;
+    --font02: 'Lato', sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font01);
+    font-size: 1.5em;
+}
+
+header{
+    background-image: linear-gradient(to bottom, #ffff, #adf011da);
+    text-align: center;
+    color: var(--cor03);
+    min-height: 150px;
+    margin-bottom: 15px;
+}
+
+h1#marca > a{
+    text-decoration: none;
+    font: normal bold 1.8em var(--font0);
+    color: var(--cor04);
+    list-style: none;
+}
+
+nav{
+    margin-top: -15px;
+    width: 100%;
+    background-color:var(--cor0);
+}
+
+nav ul li{
+    list-style: none;
+    padding: 10px;
+}
+
+nav ul a{
+    text-decoration: none;
+    margin-right: 25px;
+    float: left;
+    font-size: 1.1em;
+    color: var(--cor03);
+}
+
+nav a:hover{
+    background-color: var(--cor01);
+    border-radius: 5px;
+}
+
+select{
+    display: inline-flex;
+    margin-top: 9px;
+    margin-bottom: 5px;
+    font-family: var(--font01);
+    font-size: 1.1em;
+    color: var(--cor03);
+    background-color: var(--cor06);
+}
+
+select:hover{
+    cursor: pointer;
+}
+
+option{
+    background-color: #aff1158a;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: auto;
+
+    min-width: 300px;
+    max-width: 1000px;
+}
+
+main h2{
+    text-align: center;
+    font-size: 2em;
+    color: var(--cor03);
+    margin-bottom: 40px;
+}
+
+main h3{
+    color: var(--cor02);
+    margin-bottom: 15px;
+    font-size: 1.4em;
+}
+
+section#publicado-recente{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div{
+    background-color: var(--cor05);
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.164);
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    padding: 20px 30px;
+    width: 50%;
+}
+
+section div picture img{
+    width: 100%;
+}
+
+section div p{
+    margin-bottom: 25px;
+}
+
+section h2{
+    margin-top: 50px;
+}
+
+section .participar-da-comunidade{
+    margin-top: 20px;
+}
+
+section input{
+    font:normal bold 1em var(--font01);
+    color: var(--cor03);
+    background-color: var(--cor0);
+
+    margin-top: 15px;
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+}
+
+input > a{
+    text-decoration: none;
+}
+
+input:hover{
+    cursor: pointer;
+}
+
+div:hover{
+    cursor: pointer;
+    scale: 1.1;
+    transition: all 0.3s ease-in-out;
+}
+
+footer{
+    background-color: #eb8c10e5;
+    text-align: center;
+    font: normal bold 1.1em var(--font02);
+    color: var(--cor03);
+    padding: 10px;
+    margin-top: 25px;
+}

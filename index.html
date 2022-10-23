@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comidável</title>
+
+    <link rel="shortcut icon" href="src/imagem/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <header>
+        <h1 id="marca"><a href="#">Comidável</a></h1>
+        <p>
+            Receitas Saudáveis e dicas de alimentação
+        </p>
+    </header>
+
+    <nav>
+        <ul class="menu">
+            <a href="#">
+                <li>Home</li>
+            </a>
+            <a href="">
+                <li>Dicas de Cozinha</li>
+            </a>
+            <a href="#">
+                <li>Enviar sua receita</li>
+            </a>
+        </ul>
+
+        <select name="receitas" id="receitas">
+            <option value="receitas-opcoes">Receitas</option>
+            <option value="receitas-salgadas">Receitas Salgadas</option>
+            <option value="receitas-doces">Receitas Doces</option>
+        </select>
+    </nav>
+
+    <main>
+        <h2>Últimas Postagens</h2>
+        <section id="publicado-recente">
+            <div>
+                <picture>
+                    <source media="(max-width: 600px)" srcset="src/imagem/food-peq.jpg">
+                    <img src="src/imagem/food.jpg" alt="Tigela com frutas"></picture>
+                    <h3>Receita</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit omnis nulla et numquam quibusdam, rem necessitatibus unde pariatur, repudiandae voluptatibus quidem quam minus nemo blanditiis! Iste dicta ad ducimus aliquam!</p>
+            </div>
+        </section>
+
+        <section class="participar-da-comunidade">
+            <h2>Participe da Nossa comunidade</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos nostrum error reprehenderit iste hic sunt quo, iusto dolorum amet veritatis sit blanditiis officiis rerum delectus voluptates aut laudantium et voluptatem!</p>
+            <a href="src/html/cadastro.html" target="_self"><input type="button" value="Participar"></a>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Brenna</p>
+    </footer>
+</body>
+
+</html>
